@@ -1,1 +1,1 @@
-# udemy_typescript_sort
+# udemy cource typescript sorting
