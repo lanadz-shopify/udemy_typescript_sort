@@ -4,21 +4,21 @@ import { CharactersCollection } from './CharactersCollection';
 import { LinkedList } from './LinkedList';
 const numbersCollection = new NumbersCollection([0, -5, -1, 120, 21, 12]);
 
-let sorter = new Sorter(numbersCollection);
-sorter.sort();
-console.log(numbersCollection.data);
+// numbersCollection.sort();
+console.log('Number Collection: ', numbersCollection);
+console.log('Number Collection: ', numbersCollection.sort());
 
 const charsCollection = new CharactersCollection('aasdwrgijashdAUIF');
-sorter = new Sorter(charsCollection);
-sorter.sort();
-console.log(charsCollection.data);
+console.log('String: ', charsCollection);
+console.log('String: ', charsCollection.sort());
 
 const linkedList = new LinkedList();
 linkedList.add(500);
 linkedList.add(-500);
 linkedList.add(1500);
 linkedList.add(500);
-
-sorter = new Sorter(linkedList);
-sorter.sort();
+console.log('Linked List: ');
+linkedList.print();
+linkedList.sort();
+console.log('Linked List sorted: ');
 linkedList.print();
